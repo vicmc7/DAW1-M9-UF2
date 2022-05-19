@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat+Brush&family=Just+Another+Hand&family=Overpass:wght@300;400;500;600;700&family=Pangolin&family=Permanent+Marker&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat Brush', cursive;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+    background-image: url(./imatges/fons.png);
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+.titols{
+    margin-left: 5vw;
+    margin-top: 3vh;
+}
+h1{
+    font-family: 'Permanent Marker';
+    font-size: 15vh;
+    color: #E5A9B1;
+    margin-top: 0px;
+
+}
+
+h2{
+    font-family: 'Permanent Marker';
+    color: #E5A9B1;
+    font-size: 8vh;
+    margin-top: -5vh;
+}
+
+
+.main{
+    position: relative;
+    height: 60%;
+    width: 40%;
+    margin-left: 4vw;
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #395B5F, #434A4E);
+}
+.main button{
+    padding: 5px 6px;
+    margin: 0 10px;
+}
+.main #logo{
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    font-size: 20px;
+    color: #ccc;
+    text-transform: capitalize;
+}
+.main #logo i{
+    margin-right: 7px;
+}
+
+/*left & right part */
+
+.right , .left{
+    position: relative;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*song image*/
+.left img{
+    height: 60%;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 1px 0px 20px 12px rgba(240,240,240,0.2);
+}
+
+/*both range slider*/
+input[type="range"]{
+    -webkit-appearance: none;
+    width: 40%;
+    outline: none;
+    height: 4px;
+    margin: 0 15px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    background: #E5A9B1;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.right input[type="range"]{
+    width: 30%;
+}
+
+/*volume part*/
+.left .volume{
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.left .volume p{
+    font-size: 20px;
+    margin-right: 2px;
+}
+.left .volume i{
+    cursor: pointer;
+    padding: 6px 10px;
+    background: #E5A9B1;
+}
+.left .volume i:hover{
+    background: rgba(245, 245,245, 0.1);
+}
+.left #volume-show{
+    padding: 6px 10px;
+    margin: 0 5px 0 0;
+    background: rgba(245, 245, 245, 0.1);
+}
+
+/*right part*/
+.right .middle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .middle button{
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    background: rgba(189, 189, 189, 0.1);
+}
+.right #title{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 32px;
+}
+.right #artist{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 18px;
+}
+.right .duration{
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 30px;
+}
+.right .duration p{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.right #auto{
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border:none;
+    padding: 10px 14px;
+    color: #fff;
+    background: rgba(245, 245, 245, 0.2);
+    outline: none;   
+    border-radius: 10px;
+}
+.right #auto i{
+    margin-left: 6px;
+}
+#play{
+    background: #E5A9B1;
+}
+.right button:hover{
+    background: #E5A9B1;
+}
+.right i:before{
+    color: #fff;
+    font-size: 20px;
+}
+.right .show-song-no{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    color: #fff;
+    border-radius: 5px;
+    background: rgba(245, 245, 245, 0.2);
+}
+.right .show-song-no p:nth-child(2){
+    margin: 0 5px;
+}

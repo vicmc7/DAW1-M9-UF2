@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<div>
+		<img class="titol" src="./imatges/petites/cooltext409685048489713.png" alt="">
+	</div>
+    <section id="index" class="wrapper"> 
+		<div class="contenedor">
+			<div class="element img1">
+				<img src="./imatges/petites/img01.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img2">
+				<img src="./imatges/petites/img02.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img3">
+				<img src="./imatges/petites/img03.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img4">
+				<img src="./imatges/petites/img04.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img5">
+				<img src="./imatges/petites/img05.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img6">
+				<img src="./imatges/petites/img06.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img7">
+				<img src="./imatges/petites/img07.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img8">
+				<img src="./imatges/petites/img08.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img9">
+				<img src="./imatges/petites/img09.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img10">
+				<img src="./imatges/petites/img10.png" onclick="FullView(this.src)">
+			</div>
+			<div class="element img11">
+				<img src="./imatges/petites/img11.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img12">
+				<img src="./imatges/petites/img12.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img13">
+				<img src="./imatges/petites/img13.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img14">
+				<img src="./imatges/petites/img14.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img15">
+				<img src="./imatges/petites/img15.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img16">
+				<img src="./imatges/petites/img16.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img17">
+				<img src="./imatges/petites/img17.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img18">
+				<img src="./imatges/petites/img18.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img19">
+				<img src="./imatges/petites/img19.jpg" onclick="FullView(this.src)">
+			</div>
+			<div class="element img20">
+				<img src="./imatges/petites/img20.jpg" onclick="FullView(this.src)">
+			</div>
+		</div>
+		<div id="FullImageView">
+			<img id="FullImage" />
+			<span id="CloseButton" onclick="CloseFullView()">&times;</span>>
+		</div>
+	</section>
+    <script type="text/javascript">
+		function FullView(ImgLink){
+			document.getElementById("FullImage").src=ImgLink;
+			document.getElementById("FullImageView").style.display = "block";
+		}
+		function CloseFullView(){
+			document.getElementById("FullImageView").style.display = "none";
+		}
+	</script>
+</body>
+</html>

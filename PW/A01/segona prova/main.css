@@ -1,0 +1,74 @@
+
+body{
+    background-color: black;
+}
+.titol{
+    margin-left: 25vw;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    height: 15vh;
+    width: 45vw;
+}
+.contenedor{
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 25%;
+	background-color: rgb(50, 49, 49);
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.contenedor::-webkit-scrollbar{
+    background: rgb(69, 69, 69);
+    border-radius: 10px;
+    width: 10px;
+  }
+
+.contenedor::-webkit-scrollbar-button{
+    background-color: rgb(134, 133, 134);
+}
+
+.contenedor::-webkit-scrollbar-thumb{
+    background-color: rgb(252, 79, 180);
+    width: 10px;
+    border-radius: 10px;
+}
+.element{
+	padding: 4px;
+    background: rgb(50, 49, 49);
+}
+
+.element > img {
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    margin-inline: auto;
+
+}
+
+/* Imatge en gran quan cliquem*/
+#FullImageView{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+    text-align: center;
+}
+
+#FullImage{
+    padding: 10px;
+    max-width: 98%;
+    max-height: 95%;
+}
+#CloseButton{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
