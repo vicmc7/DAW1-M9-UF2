@@ -1,0 +1,83 @@
+@import url(https://fonts.google.com/share?selection.family=Chakra%20Petch:wght@300);
+
+    *{
+        font-family: 'Chakra Petch';
+        margin: 0px;
+    }
+
+    .boto{
+        display: flex;
+        justify-content: space-evenly;
+        height: 10vh;
+        padding-top: 2vh;
+        padding-bottom: 4vh;
+        background-color: #ADADAD;
+    }
+    .botoheader{
+        border: solid black;
+        padding: 3vh 5vw 3vh 5vw;
+    }
+
+    .separador{
+        background-color: black;
+        height: 0.5vh;
+        width: 100vw;
+    }
+
+    .exercicis, .projecte{
+        display: flex;
+        justify-content: center;
+    }
+
+    .activitats{
+    margin-top: -20px;
+    text-align: center;
+    }
+
+    .peu{
+        display: flex;
+        justify-content: space-between;
+        height: 9vh;
+        padding-top: 3vh;
+        background-color: #ADADAD;
+    }
+
+    .clas_proj{
+        border: solid black;
+        padding: 2vh 30vw 2vh 30vw;
+    }
+
+    .activitat{
+        border: solid black;
+        padding: 12vh 3vw 12vh 3vw;
+        
+    }
+
+    .centre{
+        height: 71vh;
+        width: 70vw;
+        margin-left: 15vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        transition: ease 0,5s; 
+        background-color: white;
+        box-shadow: -5px 5px 5px pink;
+        transition: box-shadow 500ms;
+    }
+
+    a:hover{
+    
+    outline: thick ridge pink;
+    font-weight: bold;
+    color: #565555;
+    transform: scale(1.1);
+    box-shadow: -15px 15px  pink;
+    border: 0px;
+    }
